@@ -4,7 +4,7 @@
 }
 
 body{
-  width: 100%;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +19,7 @@ body{
 /* ------------------geral----------------- */
 
 .conteiner--principal {
+  width: 98%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +82,7 @@ label {
 }
 
 input.entrada--dados {
+  max-width: 75%;
   text-align: center;
   width: 300px;
   height: 40px;
@@ -135,6 +137,7 @@ input:focus{
   padding: 5px;
   border-radius: 5px;
   font-weight: 600;
+  text-align: center;
 }
 
 .tabela--referencia{
@@ -149,4 +152,20 @@ input:focus{
 .tabela--referencia img {
   padding: 20px;
   margin-bottom: 40px;
+}
+
+#tabela__mobile{
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  #tabela__mobile{
+    display: block;
+  }
+
+  #tabela__desktop {
+    display: none;
+  }
+
 }
