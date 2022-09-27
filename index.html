@@ -29,9 +29,9 @@
     <div class="calculadoraIMC">
 
       <label for="peso">Digite seu peso (kg) </label>
-      <input id="peso" type="number" class="entrada--dados" placeholder="- -" >
+      <input id="peso" type="number" class="entrada--dados" placeholder="- -" onkeypress="return somenteNumeros(event)" >
       <label for="altura">Digite sua altura (m) – <small>sem pontos ou vigulas</small></label>
-      <input id="altura" type="number" class="entrada--dados" placeholder="- - -" min="2" max="2">
+      <input id="altura" type="number" class="entrada--dados" placeholder="- - -" onkeypress="return somenteNumeros(event)">
       <input type="submit" value="Calcular IMC" class="btn--enviar--dados" onclick="cauculaIMC()">
 
 
